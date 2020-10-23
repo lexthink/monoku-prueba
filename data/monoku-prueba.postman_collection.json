@@ -958,6 +958,40 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "http://localhost:8000/api/options/e16d0b34-fa27-4642-b1f9-ec4163f0e598/take/",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjAzNDIyODExLCJqdGkiOiIxNmU4YjNlY2JhOWI0N2Y4YTVhZTViNTUyZGQ1YTg4OSIsInVzZXJfaWQiOjJ9.bhhCqjKpwdcebxsBuozxfzbUv6uUvTcHkR3fnwcsiT0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/options/e16d0b34-fa27-4642-b1f9-ec4163f0e598/take/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"options",
+								"e16d0b34-fa27-4642-b1f9-ec4163f0e598",
+								"take",
+								""
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
