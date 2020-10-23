@@ -238,6 +238,32 @@ HTTP 204 No Content
 
 ---
 
+**URL** : `http://localhost:8000/api/options/{id}/take/`
+
+**Method** : `POST`
+
+**Authentication Pequired** : Yes
+
+**Request Parameters** : None
+
+**Example Request** :
+
+```shell
+$ curl -X POST "http://localhost:8000/api/options/e16d0b34-fa27-4642-b1f9-ec4163f0e598/take/" -H "accept: application/json" -H "Authorization: Bearer <your_token>"
+```
+
+**Example Response** :
+
+```json
+HTTP 200 OK
+
+{
+    "taken": true
+}
+```
+
+---
+
 ## Resources
 
 - **Events** : `http://localhost:8000/api/options/`    ***[view details](events.md)***.
