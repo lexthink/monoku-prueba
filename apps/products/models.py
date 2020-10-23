@@ -48,8 +48,8 @@ class Option(models.Model):
     def __str__(self):
         return self.description
 
-    def can_be_taken(self):
-        return self.stock > 0
+    def can_be_taken(self, user):
+        return self.stock > 0 and not user.has_taken(self)
 
     class Meta:
         verbose_name = _("Option")

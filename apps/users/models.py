@@ -14,7 +14,7 @@ class User(AbstractUser):
         super(User, self).save(*args, **kwargs)
 
     def take(self, option):
-        if not option.can_be_taken():
+        if not option.can_be_taken(self):
             return False
         taken = UserProduct(user=self, option=option)
         taken.save()
@@ -22,6 +22,8 @@ class User(AbstractUser):
         option.save()
         return True
 
+    def has_taken(self, option):
+        return UserProduct.objects.filter(user=self, option=option).exists()
 
 class UserProduct(models.Model):
     user = models.ForeignKey(

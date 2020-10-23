@@ -29,5 +29,4 @@ class OptionViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['post', 'get'], permission_classes=[IsAuthenticated, CanBeTaken])
     def take(self, request, pk):
         option = self.get_object()
-        request.user.take(option)
-        return Response({'taken': True})
+        return Response({'taken': request.user.take(option)})
