@@ -18,7 +18,7 @@ $ cd monoku-prueba
 $ virtualenv venv && source venv/bin/activate # optional
 $ pip install -r requirements.txt
 $ python manage.py migrate
-$ python manage.py loaddata fixtures # load fake data (default users, courses, lessons, etc.)
+$ python manage.py loaddata fixtures # load fake data (default users, events, products, etc.)
 $ python manage.py runserver
 ```
 The development web-server is running by default in http://localhost:8000.
